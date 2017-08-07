@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+  <title>teh cat chat...?</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="/jquery.min.js"></script>
+  <script src="/jquery-ui.js"></script>
+  <script src="/lite-touch-event-converter.js"></script>
+  <script src="/draggable.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+
+  <div class="login page">
+
+
+    <div data-reactroot="" class="instant-messenger" id="sign-on">
+      <div class="header">
+        Sign On
+        <ul class="header__links">
+          <li class="header__minimize">_</li>
+          <li class="header__maximize">[]</li>
+          <li class="header__close">×</li>
+        </ul>
+      </div>
+
+      <div class="message-list">
+        <div class="pix">
+          <img src="img/cool.gif">
+        </div>
+      </div>
+      <div class="customize-row">
+        Enter Your Screenname:
+      </div>
+      <form class="message-form">
+        <input type="text" name="text" value="" placeholder="..." class="usernameInput" id="new_user">
+        <div class="message-form__actions">
+          <input type="submit" class="message-form__submit" id="new" value=""></button>
+        </div>
+      </form>
+    </div>
+
+
+
+  </div>
+
+  <div id="app">
+    <div data-reactroot="" class="instant-messenger">
+      <div class="header">
+        ButtLord - Chat Room
+        <ul class="header__links">
+          <li class="header__minimize">_</li>
+          <li class="header__maximize">[]</li>
+          <li class="header__close">×</li>
+        </ul>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">File</li>
+          <li class="nav__item">Edit</li>
+          <li class="nav__item">Insert</li>
+        </ul><span class="nav__warning-level"> Your Warning Level: 0%</span></nav>
+      <div class="chat-center">
+        <div class="message-list">
+          <div class="message-list__container chat-box">
+
+          </div>
+        </div>
+        <div class="user-list">
+          <div class="users-list__container">
+            <ul id="chat-users">
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="customize-row">
+        <div class="customize-row__set">
+          <button class="customize-row__button text-blue">A</button>
+          <button class="customize-row__button background-blue">A</button>
+        </div>
+        <div class="customize-row__set">
+          <button class="customize-row__button small-a">A</button>
+          <button class="customize-row__button medium-a">A</button>
+          <button class="customize-row__button large-a">A</button>
+        </div>
+        <div class="customize-row__set">
+          <button class="customize-row__button bold-text">B</button>
+          <button class="customize-row__button italic-text">I</button>
+          <button class="customize-row__button underline-text">u</button>
+        </div>
+        <div class="customize-row__set">
+          <button class="customize-row__button link-text">link</button>
+          <button class="customize-row__button"><img src="http://www.jesush.com/wp-content/uploads/2008/07/happy10.gif"></button>
+        </div>
+      </div>
+      <form class="message-form">
+        <textarea class="message-form__textarea" id="message"></textarea>
+        <div class="message-form__actions">
+          <button type="button" class="message-form__submit" id="btn"></button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="/main.js"></script>
+</body>
+
+</html>
